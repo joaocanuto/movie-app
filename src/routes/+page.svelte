@@ -14,16 +14,9 @@
       console.log(error);
       return [];
     })
-    
-    // const res = await fetch(api);
-    // const data = await res.json();
-    // dataApi = data.results
-    // apiData.set(data.results);
   });
-
-  // {JSON.stringify(data)}
 </script>
 
-<section>
+<section data-theme="light">
   <PopularMovies listMovies={$apiData}/>
 </section>
