@@ -1,9 +1,12 @@
 <script>
     export let movie;
+    console.log(movie);
 </script>
 
 <div class="card lg:card-side bg-base-100 shadow-xl">
-    <figure><img  src={'https://image.tmdb.org/t/p/w500' + movie.poster_path} alt={movie.title}/></figure>
+    <a href={'/movie/' + movie.id}>
+        <figure><img  src={'https://image.tmdb.org/t/p/w500' + movie.poster_path} alt={movie.title}/></figure>
+    </a>
     <div class="card-body">
       <h2 class="card-title">{movie.title}</h2>
       <p></p>
