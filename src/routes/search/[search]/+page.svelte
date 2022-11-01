@@ -1,13 +1,13 @@
 <script>
+    export let data;
 	import PopularMovies from '../../../components/PopularMovies.svelte';
     import { each } from 'svelte/internal';
     /** @type {import('./$types').PageData} */
-
-    export let data;
-
+    $:content = Object.keys(data).map(key => data[key]);
+    
 </script>
 
-<PopularMovies listMovies={data}/>
+ <PopularMovies listMovies={content}/>
 
 <style>
 

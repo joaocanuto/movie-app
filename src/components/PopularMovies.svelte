@@ -1,7 +1,8 @@
 <script>
+
+    // @ts-ignore
     export let listMovies;
     import MovieCard from "./MovieCard.svelte";
-    
 </script>
 
 <div class="popular-movies">

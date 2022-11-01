@@ -1,6 +1,8 @@
 <script>
-    export let movie;
-    console.log(movie);
+    /**
+	 * @type {{ id: string; poster_path: string; title: any; }}
+	 */
+     export let movie;
 </script>
 
 <div class="card lg:card-side bg-base-100 shadow-xl">

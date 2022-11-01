@@ -1,8 +1,9 @@
 <script>
     import {goto} from '$app/navigation'
-    let inputValue = ' ';
+    let inputValue = '';
 
     function submitSearch(){
+        console.log("teste")
         goto('/search/' + inputValue);
     }
 </script>
